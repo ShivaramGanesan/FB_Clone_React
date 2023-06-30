@@ -4,7 +4,9 @@ export default function VerticalSepView(props){
         const currentList = props.list[i];
         // console.log("current list")
         // console.log(currentList);
+        
         const currentTitle = props.title[i];
+        console.log(currentList)
         comp.push(<Sep key={Date.now() * Math.random() * 100}/>)
         comp.push(<Title key = {Date.now()* Math.random() * 100} title={currentTitle}></Title>)
         for(let j=0;j<currentList.length;j++){
@@ -27,6 +29,6 @@ function Sep(){
     return (<span className='sep'></span>)
 }
 
-function Title(){
-    return (<span className='title'></span>);
+function Title(props){
+    return (<span className='comp_title'>{props.title}</span>);
 }

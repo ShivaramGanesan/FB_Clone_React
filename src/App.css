@@ -73,7 +73,9 @@
 .left_pane{
   height: 100%;
   border: solid 1px grey;
-  flex-grow: 1;
+  flex-grow: .5;
+  display: flex;
+  flex-direction: column;
 }
 .middle_pane{
   height: 100%;
@@ -83,7 +85,9 @@
 .right_pane{
   height: 100%;
   border: solid 1px purple;
-  flex-grow: 1;
+  flex-grow: .5;
+  display: flex;
+  flex-direction: column;
 }
 
 .bodyComponent{
@@ -93,4 +97,12 @@
   width: 100%;
   height: 100%;
   justify-content: space-between;
+}
+.comp_title{
+  font-weight: bold;
+  color: gray;
+}
+
+.sep{
+  border-bottom: solid lightgray;
 }

@@ -15,8 +15,8 @@ export default function LeftPane(){
         name: "Power Dabba"
     }])
     let title = ["", "Your Shortcuts"]
-    console.log(list)
+    // console.log(list)
     return (<div className="left_pane">
-        <VerticalSepView list={list} title={title}/>        
+        <VerticalSepView list={list} title={title}/>
     </div>)
 }

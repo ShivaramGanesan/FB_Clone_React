@@ -5,8 +5,8 @@ export default function BodyComponent(){
     return (
         <div className="bodyComponent">
             <LeftPane/>
-            {/* <MiddlePane></MiddlePane>
-            <RightPane></RightPane> */}
+            <MiddlePane></MiddlePane>
+            <RightPane></RightPane>
         </div>
     )
 }
